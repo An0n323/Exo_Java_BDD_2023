@@ -17,19 +17,13 @@
 <%-- Vérification de l'existence de la valeur --%>
 <% if (valeur != null && !valeur.isEmpty()) { %>
 
-<%-- Conversion de la valeur en entier --%>
-<% int taille = Integer.parseInt(valeur); %>
-
-<%-- Boucle for pour afficher un carré d'étoiles --%>
-<% for (int i = 1; i <= taille; i++) { %>
+<%-- Boucle for pour afficher une ligne d'étoiles --%>
+<%int cpt = Integer.parseInt(valeur); %>
 <p>
-<% for (int j = 1; j <= taille; j++) { %>
+<% for (int i = 1; i <= cpt; i++) { %>
 <%= "*" %>
 <% } %>
 </p>
-<% } %>
-
-<% } %>
 
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>Ecrire le code afin de produire un carré d'étoile</p>
